@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "天才商城",
+  "navigationBarBackgroundColor": "#FFF",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "index-swiper": "../../components/index/IndexSwiper",
+    "card": "../../components/common/Card",
+    "commodity-list": "../../components/common/CommodityList"
+  }
+}

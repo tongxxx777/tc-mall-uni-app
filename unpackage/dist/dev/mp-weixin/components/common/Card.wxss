@@ -1,0 +1,11 @@
+
+.card.data-v-aea130cd {
+		padding: 20rpx 0;
+		display: flex;
+		justify-content: center;
+		font-weight: bold;
+}
+.card-name.data-v-aea130cd {
+		padding: 0 20rpx;
+		font-size: 32rpx;
+}
