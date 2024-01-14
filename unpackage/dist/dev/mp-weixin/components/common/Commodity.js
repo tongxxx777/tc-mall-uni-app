@@ -2,7 +2,15 @@
 const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   props: {
-    dataList: Array
+    dataList: Array,
+    itemW: {
+      type: String,
+      default: "375rpx"
+    },
+    bigH: {
+      type: String,
+      default: "375rpx"
+    }
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -15,7 +23,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         d: common_vendor.t(item.volume),
         e: index
       };
-    })
+    }),
+    b: common_vendor.s("height:" + $props.bigH + ";"),
+    c: common_vendor.s("width:" + $props.itemW + ";")
   };
 }
 const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cb28c60"], ["__file", "E:/developer/mini/tc-mall-mini/components/common/Commodity.vue"]]);

@@ -4,13 +4,11 @@
 		flex-wrap: wrap;
 }
 .commodity-item.data-v-1cb28c60 {
-		width: 375rpx;
 		padding: 10rpx;
 		box-sizing: border-box;
 }
 .commodity-img.data-v-1cb28c60 {
 		width: 100%;
-		height: 375rpx;
 		border-radius: 10rpx;
 		object-fit: cover;
 }
