@@ -1,14 +1,19 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
 const IndexSwiper = () => "../../components/index/IndexSwiper.js";
-const Card = () => "../../components/common/Card.js";
-const CommodityList = () => "../../components/common/CommodityList.js";
 const Icons = () => "../../components/index/Icons.js";
+const Card = () => "../../components/common/Card.js";
 const Hot = () => "../../components/index/Hot.js";
 const _sfc_main = {
   data() {
     return {
+      // 选中的索引
       topBarIndex: 0,
+      // 顶栏跟随的索引ID值
+      scrollIntoIndex: "top0",
+      // 内容块的高度值
+      clentHeight: 0,
+      // 顶栏数据
       topBar: [
         {
           name: "推荐"
@@ -36,12 +41,17 @@ const _sfc_main = {
   },
   components: {
     IndexSwiper,
-    Card,
-    CommodityList,
     Icons,
+    Card,
     Hot
   },
   onLoad() {
+  },
+  onReady() {
+    let view = common_vendor.index.createSelectorQuery().select(".home-data");
+    view.boundingClientRect((data) => {
+      this.clentHeight = data.height;
+    }).exec();
   },
   methods: {
     changeTab(index) {
@@ -49,30 +59,47 @@ const _sfc_main = {
         return;
       }
       this.topBarIndex = index;
+      this.scrollIntoIndex = "top" + index;
     },
     onChangeTab(e) {
       this.changeTab(e.detail.current);
     }
   }
 };
+if (!Array) {
+  const _component_IndexSwiper = common_vendor.resolveComponent("IndexSwiper");
+  const _component_Icons = common_vendor.resolveComponent("Icons");
+  const _component_Card = common_vendor.resolveComponent("Card");
+  const _component_Hot = common_vendor.resolveComponent("Hot");
+  (_component_IndexSwiper + _component_Icons + _component_Card + _component_Hot)();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: common_vendor.f($data.topBar, (item, index, i0) => {
       return {
         a: common_vendor.t(item.name),
         b: common_vendor.n($data.topBarIndex === index ? "f-active-color" : "f-color"),
-        c: index,
-        d: common_vendor.o(($event) => $options.changeTab(index), index)
+        c: "top" + index,
+        d: index,
+        e: common_vendor.o(($event) => $options.changeTab(index), index)
       };
     }),
-    b: common_vendor.f($data.topBar, (item, index, i0) => {
+    b: $data.scrollIntoIndex,
+    c: common_vendor.f($data.topBar, (item, index, i0) => {
       return {
-        a: common_vendor.t(item.name),
-        b: index
+        a: "1cf27b2a-0-" + i0,
+        b: "1cf27b2a-1-" + i0,
+        c: "1cf27b2a-2-" + i0,
+        d: "1cf27b2a-3-" + i0,
+        e: index
       };
     }),
-    c: common_vendor.o((...args) => $options.onChangeTab && $options.onChangeTab(...args)),
-    d: $data.topBarIndex
+    d: common_vendor.p({
+      cardTitle: "热销爆品"
+    }),
+    e: common_vendor.o((...args) => $options.onChangeTab && $options.onChangeTab(...args)),
+    f: $data.topBarIndex,
+    g: common_vendor.s("height:" + $data.clentHeight + "px;")
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/developer/mini/tc-mall-mini/pages/index/index.vue"]]);

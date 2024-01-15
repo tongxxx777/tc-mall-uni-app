@@ -6847,6 +6847,7 @@ const createSubpackageApp = initCreateSubpackageApp();
 exports._export_sfc = _export_sfc;
 exports.createSSRApp = createSSRApp;
 exports.f = f;
+exports.index = index;
 exports.n = n;
 exports.o = o;
 exports.p = p;

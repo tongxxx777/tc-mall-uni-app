@@ -9,7 +9,7 @@
 		padding: 10rpx 20rpx;
 		font-size: 30rpx;
 }
-.f-active-color.data-v-1cf27b2a{
+.f-active-color.data-v-1cf27b2a {
 		padding: 5rpx 0;
 		border-bottom: 5rpx solid #49BDFB;
 }
