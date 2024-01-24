@@ -28,5 +28,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     c: common_vendor.s("width:" + $props.itemW + ";")
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cb28c60"], ["__file", "E:/developer/mini/tc-mall-mini/components/common/Commodity.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cb28c60"], ["__file", "E:/developer/tc-mall-uni-app/components/common/Commodity.vue"]]);
 wx.createComponent(Component);
