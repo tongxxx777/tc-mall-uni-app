@@ -2,23 +2,23 @@
 	<view class="icons">
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-1.png">
-			<text class="f-color">显示器</text>
+			<text class="f-color">手机</text>
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-2.png">
-			<text class="f-color">台式机</text>
+			<text class="f-color">电脑</text>
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-3.png">
-			<text class="f-color">轻薄本</text>
+			<text class="f-color">电视</text>
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-4.png">
-			<text class="f-color">游戏本</text>
+			<text class="f-color">家电</text>
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-5.png">
-			<text class="f-color">平板电脑</text>
+			<text class="f-color">耳机</text>
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-6.png">
@@ -30,7 +30,7 @@
 		</view>
 		<view class="icons-item">
 			<img class="icons-img" src="../../static/img/icons-8.png">
-			<text class="f-color">打印机</text>
+			<text class="f-color">其它</text>
 		</view>
 	</view>
 </template>
