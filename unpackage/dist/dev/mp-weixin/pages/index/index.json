@@ -3,9 +3,9 @@
   "navigationBarBackgroundColor": "#FFF",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "index-swiper": "../../components/index/IndexSwiper",
-    "icons": "../../components/index/Icons",
+    "banners": "../../components/index/Banners",
+    "categories": "../../components/index/Categories",
     "card": "../../components/common/Card",
-    "hot": "../../components/index/Hot"
+    "products": "../../components/common/Products"
   }
 }

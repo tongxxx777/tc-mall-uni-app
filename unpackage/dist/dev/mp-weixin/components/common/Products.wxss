@@ -1,21 +1,21 @@
 
-.commodity.data-v-1cb28c60 {
+.product.data-v-e2338cc2 {
 		display: flex;
 		flex-wrap: wrap;
 }
-.commodity-item.data-v-1cb28c60 {
+.product-item.data-v-e2338cc2 {
 		padding: 10rpx;
 		box-sizing: border-box;
 }
-.commodity-img.data-v-1cb28c60 {
+.product-img.data-v-e2338cc2 {
 		width: 100%;
 		border-radius: 10rpx;
 		object-fit: cover;
 }
-.commodity-content.data-v-1cb28c60 {
+.product-content.data-v-e2338cc2 {
 		text-align: center;
 }
-.commodity-name.data-v-1cb28c60 {
+.product-name.data-v-e2338cc2 {
 		font-size: 24rpx;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -26,14 +26,14 @@
 		word-break: break-all;
 		padding: 6rpx 10rpx;
 }
-.price.data-v-1cb28c60,
-	.volume.data-v-1cb28c60 {
+.price.data-v-e2338cc2,
+	.sold-count.data-v-e2338cc2 {
 		font-size: 24rpx;
 		margin-right: 10rpx;
 }
-.price.data-v-1cb28c60 {
+.price.data-v-e2338cc2 {
 		color: red;
 }
-.volume.data-v-1cb28c60 {
+.sold-count.data-v-e2338cc2 {
 		color: #999999;
 }

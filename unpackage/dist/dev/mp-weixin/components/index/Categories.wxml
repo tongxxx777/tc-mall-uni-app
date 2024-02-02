@@ -1,0 +1,1 @@
+<view class="icons data-v-82c6e118"><view wx:for="{{a}}" wx:for-item="category" wx:key="c" class="icons-item data-v-82c6e118"><image class="icons-img data-v-82c6e118" src="{{category.a}}"></image><text class="f-color data-v-82c6e118">{{category.b}}</text></view></view>
